@@ -137,10 +137,10 @@ const Hero3D = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-96 flex items-center justify-center">
+    <div className="relative w-full h-96 flex md:items-center items-end justify-center">
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
+        className="absolute not-md:top-1/2 not-md:-translate-y-1/6 md:inset-0 w-full h-full"
         style={{ width: "100%", height: "100%" }}
       />
       <div className="relative z-10 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg backdrop-blur-sm border border-white/10 flex items-center justify-center">

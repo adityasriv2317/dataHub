@@ -6,7 +6,7 @@ import { useState, useEffect, use } from "react";
 import FeatureCard from "@/components/FeatureCard";
 import Hero3D from "@/components/Hero3D";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, User } from "lucide-react";
 
 import { Check } from "lucide-react";
 
@@ -67,6 +67,10 @@ export default function Home() {
       {/* particles */}
       <Particles />
 
+      <button type="button" className="absolute top-6 cursor-pointer right-6 z-100 rounded-full bg-white/10 hover:bg-white/20 border-2 border-gray-400/50">
+        <User className="p-2.5 h-10 w-10 text-white/90" />
+      </button>
+
       {/* Hero Section */}
       <section className="relative min-h-screen select-none flex items-center justify-center px-4">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" />
@@ -119,7 +123,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-gray-600 text-white hover:bg-white hover:text-black px-8 py-4 text-lg"
+                className="border-gray-600 text-white hover:bg-white/90 hover:text-black px-8 py-4 text-lg"
               >
                 Watch Demo
               </Button>
